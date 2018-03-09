@@ -6,13 +6,13 @@ There is a [demo](http://mazemap.github.io/Leaflet.TileLayer.PouchDBCached/demo.
 
 # Dependencies
 
-Works with Leaflet 1.0.0 and PouchDB 5.2.0 (or greater).
+Works with Leaflet 1.0.0 (or greater) and PouchDB 6.0.0 (or greater).
 
 You probably want to load Leaflet, PouchDB and Leaflet.TileLayer.PouchDB like so:
 
 ```html
-	<script src="https://unpkg.com/leaflet@^1.0.0/dist/leaflet-src.js"></script>
-	<script src="https://unpkg.com/pouchdb@^5.2.0/dist/pouchdb.js"></script>
+	<script src="https://unpkg.com/leaflet@^1.1.0/dist/leaflet-src.js"></script>
+	<script src="https://unpkg.com/pouchdb@^6.3.4/dist/pouchdb.js"></script>
 	<script src="https://unpkg.com/leaflet.tilelayer.pouchdbcached@latest/L.TileLayer.PouchDBCached.js"></script>
 ```
 
@@ -28,7 +28,6 @@ To use, add the option `useCache` with a value of `true` when instantiating your
 ```
 var layer = L.tileLayer('https://whatever/{z}/{x}/{y}.png', {
 	maxZoom: 18,
-
 	useCache: true,
 	crossOrigin: true
 });
